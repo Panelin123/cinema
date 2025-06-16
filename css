@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: "Merienda", cursive;
+    background-color: #10002bff; 
+    --roxo-escurão: #10002bff;
+    --roxo-escuro-2: #240046ff;
+    --indigo: #3c096cff;
+    --violeta: #5a189aff;
+    --roxo: #7b2cbfff;
+    --roxo-pedra: #9d4eddff;
+    --roxo-claro: #c77dffff;
+    --rosa: #e0aaffff;
+}
+
+header{
+    background-color: #7b2cbfff; 
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content:center; 
+    align-items: center; 
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #5a189aff; 
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #3c096c; 
+}
+
+main{
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+img{
+    display: flex;
+    justify-content: space-between;
+}
+
+img_2{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #7b2cbfff;; 
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 13px;
+}
