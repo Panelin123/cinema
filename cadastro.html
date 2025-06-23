@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastro de Filme</title>
+  <link rel="stylesheet" href="cadastro.css" />
+</head>
+<body>
+  <header>
+    <h1>Cadastro de Filme</h1>
+  </header>
+  <main>
+    <form id="form-filme">
+      <label for="titulo">Título do Filme</label>
+      <input type="text" id="titulo" name="titulo" required />
+
+      <label for="diretor">Diretor</label>
+      <input type="text" id="diretor" name="diretor" required />
+
+      <label for="data">Data de Lançamento</label>
+      <input type="text" id="data" name="data" placeholder="dd/mm/aaaa" required />
+
+      <label for="genero">Gênero</label>
+      <select id="genero" name="genero" required>
+        <option value="" disabled selected>Selecione</option>
+        <option value="acao">Ação</option>
+        <option value="comedia">Comédia</option>
+        <option value="drama">Drama</option>
+        <option value="terror">Terror</option>
+        <option value="romance">Romance</option>
+        <option value="ficcao">Ficção Científica</option>
+      </select>
+
+      <label for="classificacao">Idade Minima</label>
+      <select id="classificacao" name="Idade Minima" required>
+        <option value="" disabled selected>Selecione</option>
+        <option value="L">L</option>
+        <option value="10">10</option>
+        <option value="12">12</option>
+        <option value="14">14</option>
+        <option value="16">16</option>
+        <option value="18">18</option>
+      </select>
+
+      <button type="submit">Cadastrar Filme</button>
+    </form>
+
+    <p id="mensagem" style="margin-top: 20px; font-weight: bold;"></p>
+  </main>
+
+  <script>
+    const form = document.getElementById('form-filme');
+    const mensagem = document.getElementById('mensagem');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); 
+r:
+      const titulo = form.titulo.value.trim();
+      const diretor = form.diretor.value.trim();
+      const ano = form.ano.value;
+      const genero = form.genero.value;
+
+      mensagem.textContent = `Filme "${titulo}" cadastrado com sucesso!`;
+
+
+      form.reset();
+    });
+    <div id="alerta" class="alerta">Filme cadastrado com sucesso!</div>
+  </script>
+   <footer>
+    <p>&copy; 2025 Filmes do Jegue. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

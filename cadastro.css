@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: "Merienda", cursive;
+    background-color: #10002b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #7b2cbf;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  form {
+    background-color: #240046;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(123, 44, 191, 0.7);
+    width: 300px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7b2cbf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #5a189a;
+  }
+  
+  #mensagem {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #e0aaff;
+  }
+
+  .alerta {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #5a189a;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+  }
+  
+  .alerta.mostrar {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  footer {
+    text-align: center;
+    background-color: #7b2cbf;
+    padding: 20px;
+    width: 100%;
+}
