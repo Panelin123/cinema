@@ -2,62 +2,101 @@ body {
     margin: 0;
     font-family: "Merienda", cursive;
     background-color: #10002bff; 
-    --roxo-escurão: #10002bff;
-    --roxo-escuro-2: #240046ff;
-    --indigo: #3c096cff;
-    --violeta: #5a189aff;
-    --roxo: #7b2cbfff;
-    --roxo-pedra: #9d4eddff;
-    --roxo-claro: #c77dffff;
-    --rosa: #e0aaffff;
+    color: white;
 }
 
-header{
-    background-color: #7b2cbfff; 
+header {
+    background-color: #7b2cbf;
     color: white;
     padding: 5px;
     text-align: center;
 }
-nav {
-    display: flex;
-    justify-content:center; 
-    align-items: center; 
-    padding: 10px;
+
+main {
+    padding: 20px;
+    text-align: center;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+.conteudo-filme {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.texto {
+    max-width: 800px;
+    text-align: justify;
+}
+.classificacao-img {
+    width: 30px;
+}
+
+#btnFavoritar {
+    margin-top: 15px;
     padding: 10px 20px;
-    background-color: #5a189aff; 
+    background-color: #5a189a;
+    border: none;
     border-radius: 5px;
-    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
-nav a:hover {
-    background-color: #3c096c; 
+#btnFavoritar:hover {
+    background-color: #3c096c;
 }
 
-main{
+#btnDesFavoritar {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #5a189a;
+    border: none;
+    border-radius: 5px;
     color: white;
-    padding: 5px;
-    text-align: center;
-}
-img{
-    display: flex;
-    justify-content: space-between;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
-img_2{
-    display: flex;
-    justify-content: space-between;
+#btnDesFavoritar:hover {
+    background-color: #3c096c;
+}
+
+.poster-img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #5a189a;
+}
+
+.trailer video {
+    border-radius: 10px;
+    box-shadow: 0 0 10px #5a189a;
+    max-width: 100%;
+    height: auto;
 }
 
 footer {
-    background-color: #7b2cbfff;; 
+    background-color: #7b2cbf;
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 13px;
+    margin-top: 30px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .conteudo-filme {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .poster-img,
+    .trailer video {
+        width: 100%;
+        max-width: 100%;
+    }
 }
