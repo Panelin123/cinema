@@ -13,13 +13,27 @@ body {
 }
 
 header{
+    display: flex;           
+    align-items: center;     
+    justify-content: center; 
+    gap: 15px;   
     background-color: #7b2cbfff; 
     color: white;
     padding: 5px;
     text-align: center;
+    flex-wrap: wrap;
 }
+
+.logo {
+    width: 100px;      
+    height: auto;       
+    border-radius: 90px; 
+    object-fit: cover;
+}
+
 nav {
-    display: flex;
+    display: block;
+    margin-top: 10px;
     justify-content:center; 
     align-items: center; 
     padding: 10px;
