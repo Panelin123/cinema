@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma Miku que Não Sabe Cantar.</title>
+    <link rel="stylesheet" href="css">
+</head>
+<body>
+    <header>
+        <h1>Uma Miku que Não Sabe Cantar.</h1>
+    </header>
+
+    <main>
+        <section class="filme">
+            <h2>Sobre o Filme</h2>
+
+            <div class="conteudo-filme">
+                <div class="texto">
+                    <p>
+                        <strong>Uma Miku que Não Sabe Cantar.</strong> Em Colorful Stage! O Filme: Uma Miku Que Não Sabe Cantar!, a pop star virtual Hatsune Miku enfrenta um novo desafio. Desesperada por não conseguir se reconectar com seus fãs usando a sua voz, ela vai ao encontro de Ichika, a nova garota virtual capaz de mover milhares de pessoas com o seu canto. Juntas, elas embarcam em uma inesperada aventura para trazer de volta a emocionante sintonia para a voz de Miku. 
+                        Ao lado delas, Rin, Len, Luka, Kaito e Meiko completam o grupo para ultrapassar as barreiras e reativar o poder vocal da garota.
+                        
+                    </p>
+                    <p><strong>Classificação indicativa:</strong> <img src="imagens/10.png" alt="Classificação indicativa 16 anos" class="classificacao-img"></p>  
+                    <P><STRong>Data Lançamento:</STRong>25/03/2025</P>
+                    <div class="favoritar-container">
+                        <input type="radio" name="favorito" id="fav" />
+                        <label for="fav">Favoritar👍</label>
+                      
+                        <input type="radio" name="favorito" id="desfav" />
+                        <label for="desfav">Desfavoritar👎</label>
+                      </div>
+                </div>
+
+                <div class="poster">
+                    <img src="imagens/miku.jpeg" alt="Pôster do filme Dan Da Dan" class="poster-img">
+                </div>
+
+                <div class="trailer">
+                    <h3>Trailer Oficial</h3>
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/watch?v=k0mDOUE9qAU" 
+                    title="Trailer Uma Miku que Não Sabe Cantar" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dan Da Dan. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
