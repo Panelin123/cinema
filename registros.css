@@ -1,0 +1,72 @@
+:root {
+  --roxo-escurão: #10002bff;
+  --roxo-escuro-2: #240046ff;
+  --indigo: #3c096cff;
+  --violeta: #5a189aff;
+  --roxo: #7b2cbfff;
+  --roxo-pedra: #9d4eddff;
+  --roxo-claro: #c77dffff;
+  --rosa: #e0aaffff;
+}
+
+body {
+  margin: 0;
+  font-family: "Merienda", cursive;
+  background-color: var(--roxo-escurão);
+  color: var(--rosa);
+  padding: 20px;
+}
+
+header{
+    background-color: #7b2cbfff; 
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 5px var(--roxo-pedra);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--roxo-escuro-2);
+  box-shadow: 0 0 10px var(--indigo);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid var(--roxo);
+}
+
+th {
+  background-color: var(--violeta);
+  color: var(--rosa);
+  font-size: 1.1em;
+}
+
+td {
+  background-color: var(--indigo);
+  color: #fff;
+}
+
+tr:hover td {
+  background-color: var(--roxo);
+  transition: 0.3s ease;
+}
+
+footer {
+    background-color: #7b2cbfff;; 
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 301px;
+}
