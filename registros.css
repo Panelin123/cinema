@@ -14,7 +14,7 @@ body {
   font-family: "Merienda", cursive;
   background-color: var(--roxo-escurão);
   color: var(--rosa);
-  padding: 20px;
+  padding: 0px;
 }
 
 header{
@@ -68,5 +68,5 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 301px;
+    margin-top: 138px;
 }
